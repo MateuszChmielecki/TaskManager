@@ -24,13 +24,13 @@ public class TaskManager {
             String str = "";
             str = scanner.next();
 
-            if(str.equals("add")){
+            if("add".equals(str)){          //// najpierw cos co nigdy nie bedzie nullem, nie może byc "str.equals("add")"
                 add();
-            }else if(str.equals("remove")){
+            }else if("remove".equals(str)){
                 remove();
-            }else if(str.equals("list")){
+            }else if("list".equals(str)){
                 list();
-            }else if(str.equals("exit")){
+            }else if("exit".equals(str)){
                 exit(fileName);
                 System.out.print(ConsoleColors.RED_BOLD);
                 System.out.println("Bye, Bye");
